@@ -21,6 +21,32 @@ const index = () => {
           ></StatsBox>
           
         </div>
+        <div style={{ display: "flex" }}>
+          <StatsBox
+            status="Coming Soon"
+            title="Quest"
+            desc="Quests Leaderboard of requirements and quests."
+          ></StatsBox>
+          <StatsBox
+            status="Coming Soon"
+            title="Best Look"
+            desc="Best LookResults of “Vote for the best look”."
+          ></StatsBox>
+          
+        </div>
+        <div style={{ display: "flex" }}>
+          <StatsBox
+            status="Coming Soon"
+            title="Quest"
+            desc="Quests Leaderboard of requirements and quests."
+          ></StatsBox>
+          <StatsBox
+            status="Coming Soon"
+            title="Best Look"
+            desc="Best LookResults of “Vote for the best look”."
+          ></StatsBox>
+          
+        </div>
 
         <Footer></Footer>
       </main>
