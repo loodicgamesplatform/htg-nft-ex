@@ -5,13 +5,15 @@ const Header = () => {
   return (
     <div style={{display:"flex" , flexDirection:"column"}}>
     <div className={styles.header}>
-        <img className={styles.img} src="./assets/i/htg.png"></img>
+      <a style={{ color:"inherit"}} href="/">
+        <img className={styles.img} src="./assets/i/htg.png"></img></a>
     </div>
 <div className={styles.headerdiv}>
 <div className={styles.headerindiv}>Games</div>
 <div className={styles.headerindiv}>Events</div>
 <div className={styles.headerindiv}>Marketplace</div>
-<div className={styles.headerindiv}>Stats</div>
+
+<div className={styles.headerindiv}><a style={{ color:"inherit"}} href="/stats">Stats</a></div>
 <div className={styles.headerindiv}>Voting</div>
 <div className={styles.headerindiv}>Forum</div>
 </div></div>

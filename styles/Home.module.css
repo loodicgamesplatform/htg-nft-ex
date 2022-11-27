@@ -6,7 +6,7 @@
 
 
 .container {
-  background-image: url(../public/assets/i/screen.png);
+  background-image: url(../public/assets/i/screen.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -102,6 +102,64 @@
   margin-right: 10px;
   margin-left: 10px;
   margin-top:30px
+}
+.statsdiv{
+  display: flex;
+  width: 50%;
+  height: 138px ;
+  margin-left: 3%;
+  margin-bottom: 40px;
+  margin-right: 3%;
+}
+
+.statstitle{
+
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 35px;
+
+}
+
+.statsdescription{
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 23px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+
+}
+
+.statsstatus{
+padding-top: 10px;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 23px;
+text-decoration-line: underline;
+}
+
+.statssmallbox{
+  width: 33%;
+  height: 100%;
+  background-color: rgba(254, 206, 0, 0.1);
+  border-radius: 10px;
+}
+.statsbigbox{
+  padding-top: 22px;
+padding-left: 19px;
+padding-right: 10px;
+  margin-left: 20px;
+  width: 66%;
+  height: 100%;
+  background-color: rgba(254, 206, 0, 0.1);
+  border-radius: 10px;
+  
 }
 
 .headerdiv {
