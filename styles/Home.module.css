@@ -9,6 +9,7 @@
   background-image: url(../public/assets/i/screen.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  
 }
 
 .main {
@@ -103,6 +104,38 @@
   margin-left: 10px;
   margin-top:30px
 }
+.votesmenudiv{
+  display: flex;
+  width: 30%;
+
+  margin-left: 10%;
+  direction: column;
+}
+.votesmenutitle{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.votesdiv{
+  display: flex;
+  width: 50%;
+  height: 138px ;
+  margin-left: 3%;
+  margin-bottom: 20px;
+  margin-right: 3%;
+  margin-top: 20px;
+}
 .statsdiv{
   display: flex;
   width: 50%;
@@ -136,29 +169,30 @@ text-overflow: ellipsis;
 }
 
 .statsstatus{
-padding-top: 10px;
+
 font-family: 'Jost';
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 23px;
+padding-top: 10px;
 text-decoration-line: underline;
 }
 
 .statssmallbox{
   width: 33%;
   height: 100%;
-  background-color: rgba(254, 206, 0, 0.1);
+  background-color: rgba(255, 255, 252, 0.1);;
   border-radius: 10px;
 }
 .statsbigbox{
-  padding-top: 22px;
+  padding-top: 20px;
 padding-left: 19px;
 padding-right: 10px;
   margin-left: 20px;
   width: 66%;
   height: 100%;
-  background-color: rgba(254, 206, 0, 0.1);
+  background-color: rgba(255, 255, 252, 0.1);;
   border-radius: 10px;
   
 }

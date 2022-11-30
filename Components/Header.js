@@ -14,7 +14,7 @@ const Header = () => {
 <div className={styles.headerindiv}>Marketplace</div>
 
 <div className={styles.headerindiv}><a style={{ color:"inherit"}} href="/stats">Stats</a></div>
-<div className={styles.headerindiv}>Voting</div>
+<div className={styles.headerindiv}><a style={{ color:"inherit"}} href="/voting">Voting</a></div>
 <div className={styles.headerindiv}>Forum</div>
 </div></div>
     
