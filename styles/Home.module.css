@@ -3,13 +3,116 @@
   src: url("../public/assets/fonts/Jost-SemiBold.ttf");
 }
 
+.walletbutton {
+  position: absolute;
+  width: 270px;
+  height: 41px;
+  justify-content: right;
+  top: 71px;
+  background-color: #FECE00;
+  border-radius: 10px;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0 0 2px #4B4A4A;
+}
+
+.postcontainer {
+  width: 30%;
+  display: flex;
+  height: 218px;
+  background-color: #FFFFFC1A;
+  border-radius: 10px;
+
+}
+
+.postname {
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 35px;
+
+}
+
+.postdate {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  color: #FFFFFF;
+  position: relative;
+
+
+  padding-left: 35px;
+}
+
+.posttitle {
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: #FFFFFF;
+}
+
+.postsub {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 35px;
+  display: flex;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.postpost {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 35px;
+  display: flex;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+
+
+
+
 
 
 .container {
   background-image: url(../public/assets/i/screen.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  
+
 }
 
 .main {
@@ -89,7 +192,7 @@
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding-left: 20px;
   padding-right: 50px;
@@ -102,16 +205,18 @@
   height: auto;
   margin-right: 10px;
   margin-left: 10px;
-  margin-top:30px
+  margin-top: 30px
 }
-.votesmenudiv{
+
+.votesmenudiv {
   display: flex;
   width: 30%;
 
   margin-left: 10%;
   direction: column;
 }
-.votesmenutitle{
+
+.votesmenutitle {
   font-family: 'Jost';
   font-style: normal;
   font-weight: 700;
@@ -127,74 +232,78 @@
 }
 
 
-.votesdiv{
+.votesdiv {
   display: flex;
   width: 50%;
-  height: 138px ;
+  height: 138px;
   margin-left: 3%;
   margin-bottom: 20px;
   margin-right: 3%;
   margin-top: 20px;
 }
-.statsdiv{
+
+.statsdiv {
   display: flex;
   width: 50%;
-  height: 138px ;
+  height: 138px;
   margin-left: 3%;
   margin-bottom: 40px;
   margin-right: 3%;
   margin-top: 30px;
 }
 
-.statstitle{
+.statstitle {
 
   font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 35px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
 
 }
 
-.statsdescription{
+.statsdescription {
   font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 23px;
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
 }
 
-.statsstatus{
+.statsstatus {
 
-font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 23px;
-padding-top: 10px;
-text-decoration-line: underline;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  padding-top: 10px;
+  text-decoration-line: underline;
 }
 
-.statssmallbox{
+.statssmallbox {
   width: 33%;
   height: 100%;
-  background-color: rgba(255, 255, 252, 0.1);;
+  background-color: rgba(255, 255, 252, 0.1);
+  ;
   border-radius: 10px;
 }
-.statsbigbox{
+
+.statsbigbox {
   padding-top: 20px;
-padding-left: 19px;
-padding-right: 10px;
+  padding-left: 19px;
+  padding-right: 10px;
   margin-left: 20px;
   width: 66%;
   height: 100%;
-  background-color: rgba(255, 255, 252, 0.1);;
+  background-color: rgba(255, 255, 252, 0.1);
+  ;
   border-radius: 10px;
-  
+
 }
 
 .headerdiv {
@@ -221,8 +330,8 @@ padding-right: 10px;
   align-items: center;
   text-align: center;
 
-  
- 
+
+
   text-align: center;
 }
 
