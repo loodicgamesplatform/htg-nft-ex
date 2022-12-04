@@ -19,9 +19,11 @@ const VotesMenu = () => {
           <div>
             <div className={styles.votesmenutitle}>My Votes</div>
           </div>
-        </div> <div style={{ height: 2, backgroundColor: "white", width: "100%" }}></div>
+        </div>
+        <div
+          style={{ height: 2, backgroundColor: "white", width: "100%" }}
+        ></div>
       </div>
-     
     </div>
   );
 };
