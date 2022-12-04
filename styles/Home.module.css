@@ -23,6 +23,66 @@
   text-shadow: 0 0 2px #4B4A4A;
 }
 
+.channelcontainer{
+  width: 45%;
+  display: flex;
+  height: 181px;
+  background-color: #FFFFFC1A;
+  border-radius: 10px;  
+  padding-top: 18px ;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.channeltitle{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: #FFFFFF;
+}
+
+
+
+.channelsubtitle{
+
+  font-family: 'IBM Plex Sans';
+font-style: italic;
+font-weight: 400;
+font-size: 24px;
+line-height: 31px;
+padding-top: 30px;
+
+}
+.channels{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  padding-left: 95px;
+
+  padding-bottom: 35px;
+}
+
+.newpost{
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 35px;
+padding-left: 95px;
+padding-top: 22px;
+padding-bottom: 35px;
+}
+
+
 .postcontainer {
   width: 30%;
   display: flex;
@@ -54,10 +114,9 @@
   display: flex;
   color: #FFFFFF;
   position: relative;
-
-
   padding-left: 35px;
 }
+
 
 .posttitle {
 
@@ -213,7 +272,7 @@
   width: 30%;
 
   margin-left: 10%;
-  direction: column;
+  flex-direction: column;
 }
 
 .votesmenutitle {
