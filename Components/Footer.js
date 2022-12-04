@@ -9,7 +9,7 @@ const Footer = () => {
         <div style={{ display: "flex", marginLeft: 40 }}>
           <div
             style={{
-              background: "#FECE0033",
+              background: "#FFFFFC1A",
               width: 40,
               height: 40,
               marginRight: 20,
@@ -17,7 +17,7 @@ const Footer = () => {
           ></div>
           <div
             style={{
-              background: "#FECE0033",
+              background: "#FFFFFC1A",
               width: 40,
               height: 40,
               marginRight: 20,
@@ -25,7 +25,7 @@ const Footer = () => {
           ></div>
           <div
             style={{
-              background: "#FECE0033",
+              background: "#FFFFFC1A",
               width: 40,
               height: 40,
               marginRight: 20,
@@ -33,7 +33,7 @@ const Footer = () => {
           ></div>
           <div
             style={{
-              background: "#FECE0033",
+              background: "#FFFFFC1A",
               width: 40,
               height: 40,
               marginRight: 20,
@@ -41,7 +41,7 @@ const Footer = () => {
           ></div>
           <div
             style={{
-              background: "#FECE0033",
+              background: "#FFFFFC1A",
               width: 40,
               height: 40,
               marginRight: 20,
@@ -49,7 +49,7 @@ const Footer = () => {
           ></div>
           <div
             style={{
-              background: "#FECE0033",
+              background: "#FFFFFC1A",
               width: 40,
               height: 40,
               marginRight: 20,
@@ -57,7 +57,7 @@ const Footer = () => {
           ></div>
           <div
             style={{
-              background: "#FECE0033",
+              background: "#FFFFFC1A",
               width: 40,
               height: 40,
               marginRight: 20,
@@ -65,7 +65,7 @@ const Footer = () => {
           ></div>
           <div
             style={{
-              background: "#FECE0033",
+              background: "#FFFFFC1A",
               width: 40,
               height: 40,
               marginRight: 20,

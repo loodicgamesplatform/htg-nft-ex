@@ -26,7 +26,9 @@ const Header = () => {
             Voting
           </a>
         </div>
-        <div className={styles.headerindiv}>Forum</div>
+        <div className={styles.headerindiv}> <a style={{ color: "inherit" }} href="/forum">
+            Forum
+          </a></div>
       </div>
     </div>
   );
