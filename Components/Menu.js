@@ -9,11 +9,11 @@ const Menu = ({ text, img, color }) => {
         flexDirection: "column",
         alignItems: "center",
         height: "100%",
-        position: "absolute",
+        position: "relative",
         width: 300,
         overflow: "hidden",
         justifyContent: "center",
-        borderRight: "1px solid #574C1A",
+        borderRight: "1px solid #FFFFFC1A",
       }}
     >
       <div
@@ -29,11 +29,12 @@ const Menu = ({ text, img, color }) => {
           text="PROFILE"
           color="#FECE00"
         ></MenuButton>
+     
         <MenuButton text="MARKET" color="#FF6A00"></MenuButton>
         <MenuButton text="GAMES" color="#FF0000"></MenuButton>
         <MenuButton text="EVENTS" color="#F700FF"></MenuButton>
         <MenuButton text="VOTING" color="#400093"></MenuButton>
-        <MenuButton text="FORUM" color="#048BA8"></MenuButton>
+           <a style={{color: "inherit"}} href="/forum"><MenuButton text="FORUM" color="#048BA8"></MenuButton></a>
         <MenuButton text="STATS" color="#007dff"></MenuButton>
       </div>
     </div>

@@ -6,7 +6,7 @@ const LoginButton = ({ color, text, border }) => {
       className={styles.loginfont}
       style={{
         width: 150,
-        height: 60,
+        height: 55,
         borderRadius: 5,
         backgroundColor: `${color}`,
         display: "flex",
@@ -14,6 +14,7 @@ const LoginButton = ({ color, text, border }) => {
         alignItems: "center",
         border: `${border}`,
         marginLeft: 21,
+  
       }}
     >
       {text}

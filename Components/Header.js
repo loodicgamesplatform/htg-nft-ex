@@ -10,7 +10,7 @@ const Header = () => {
         <a style={{ color: "inherit" }} href="/">
           <img className={styles.img} src="./assets/i/logo.png"></img>
         </a>
-        <div style={{ display: "flex", marginRight: 110, marginTop: 20 }}>
+        <div style={{ display: "flex", marginRight: 110, alignItems:"center" }}>
           <LoginButton
             text="Login In"
             color="#40009366"

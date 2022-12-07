@@ -8,6 +8,7 @@ const Channel = () => {
           width: "100%",
           display: "flex",
           justifyContent: "space-between",
+          
         }}
       >
         <div style={{ display: "flex", flexDirection: "column" }}>
