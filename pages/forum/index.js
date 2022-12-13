@@ -19,13 +19,23 @@ const index = () => {
           <div
             style={{ display: "flex", flexDirection: "column", width: "100%" }}
           >
-            <div style={{paddingRight:30, display: "flex",alignItems:"center", justifyContent:"space-between" }}>
-              <div className={styles.channels}>CHANNELS</div>
-              <LoginButton
-                text="Create New Post"
-                color="#40009366"
-                border=" 2px solid #400093"
-              ></LoginButton>
+            <div
+              style={{
+                paddingRight: 30,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <div
+                style={{ paddingLeft: 30, paddingTop: 50, paddingBottom: 35 }}
+              >
+                <LoginButton
+                  text="Create New Post"
+                  color="#40009366"
+                  border=" 2px solid #400093"
+                ></LoginButton>
+              </div>
             </div>
             <div style={{ display: "flex", justifyContent: "space-evenly" }}>
               <Channel></Channel>

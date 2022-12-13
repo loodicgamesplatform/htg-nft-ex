@@ -14,7 +14,6 @@ const LoginButton = ({ color, text, border }) => {
         alignItems: "center",
         border: `${border}`,
         marginLeft: 21,
-  
       }}
     >
       {text}

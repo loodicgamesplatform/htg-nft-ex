@@ -14,6 +14,7 @@ const Menu = ({ text, img, color }) => {
         overflow: "hidden",
         justifyContent: "center",
         borderRight: "1px solid #FFFFFC1A",
+        marginTop:50
       }}
     >
       <div
@@ -29,11 +30,13 @@ const Menu = ({ text, img, color }) => {
           text="PROFILE"
           color="#FECE00"
         ></MenuButton>
-     
-        <MenuButton text="MARKET" color="#FF6A00"></MenuButton>
+        <a href="/market" style={{color: "inherit"}}>
+        <MenuButton text="MARKET" color="#FF6A00"></MenuButton></a>
         <MenuButton text="GAMES" color="#FF0000"></MenuButton>
-        <MenuButton text="EVENTS" color="#F700FF"></MenuButton>
-        <MenuButton text="VOTING" color="#400093"></MenuButton>
+        <a style={{color: "inherit"}} href="/events">
+        <MenuButton text="EVENTS" color="#F700FF"></MenuButton></a>
+        <a style={{color: "inherit"}} href="/voting">
+        <MenuButton text="VOTING" color="#400093"></MenuButton></a>
            <a style={{color: "inherit"}} href="/forum"><MenuButton text="FORUM" color="#048BA8"></MenuButton></a>
         <MenuButton text="STATS" color="#007dff"></MenuButton>
       </div>

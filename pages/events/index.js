@@ -41,7 +41,7 @@ const index = () => {
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default index;
