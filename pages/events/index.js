@@ -5,7 +5,9 @@ import Menu from "../../Components/Menu";
 import Card from "../../Components/Card";
 import { Col, Container, Row } from "react-grid-system";
 import BuyCard from "../../Components/BuyCard";
+import { setConfiguration } from 'react-grid-system';
 const index = () => {
+  setConfiguration({  gridColumns: 20 });
   return (
     <div className={styles.container}>
       <main className={styles.main} style={{ overflow: "hidden" }}>
@@ -15,25 +17,25 @@ const index = () => {
           <div style={{width:"100%"}}>
             <Container>
             <Row>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4} lg={5} xl={4} xxl={4}>
                 <Card></Card>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4} lg={5} xl={4} xxl={4}>
                 <Card></Card>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6}md={4} lg={5} xl={4} xxl={4}>
                 <Card></Card>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4} lg={5} xl={4} xxl={4}>
                 <Card></Card>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4}lg={5} xl={4} xxl={4}>
                 <Card></Card>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4} lg={5} xl={4} xxl={4}>
                 <BuyCard></BuyCard>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4} lg={5} xl={4} xxl={4}>
                 <BuyCard></BuyCard>
               </Col>
             </Row></Container>

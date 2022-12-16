@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
-const MenuButton = ({ color, border, text }) => {
+const MenuButton = ({ color, border, text, image }) => {
   return (
     <div
       className={styles.loginfont}
@@ -19,6 +19,7 @@ const MenuButton = ({ color, border, text }) => {
       }}
     >
       <div style={{ paddingRight: 30 }}>{text}</div>
+      <img src={(`${image}`)} ></img>
     </div>
   );
 };

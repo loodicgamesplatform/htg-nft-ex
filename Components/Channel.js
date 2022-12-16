@@ -11,18 +11,21 @@ const Channel = () => {
           
         }}
       >
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <div style={{ display: "flex", flexDirection: "column" , justifyContent:"space-between"}}>
+         
           <div className={styles.channeltitle}>GENERAL DISCUSSION</div>{" "}
+          
+          <div>
           <div>
             <img src="./assets/i/image.png"></img>
           </div>
-         
+        
             <div className={styles.channelsubtitle}>
               Share stories, ideas, memes and more!
             </div>
-         
+         </div>
         </div>
-        <div className={styles.channeltitle}>FOLLOW</div>
+    
       </div>
     </div>
   );

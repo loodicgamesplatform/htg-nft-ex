@@ -13,27 +13,27 @@ const index = () => {
         <div style={{ display: "flex" }}>
           <Menu></Menu>
           <div style={{width:"100%"}}>
-            <Container>
+          <Container>
             <Row>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4} lg={5} xl={4} xxl={4}>
                 <Card></Card>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4} lg={5} xl={4} xxl={4}>
                 <Card></Card>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6}md={4} lg={5} xl={4} xxl={4}>
                 <Card></Card>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4} lg={5} xl={4} xxl={4}>
                 <Card></Card>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4}lg={5} xl={4} xxl={4}>
                 <Card></Card>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4} lg={5} xl={4} xxl={4}>
                 <BuyCard></BuyCard>
               </Col>
-              <Col sm={6} md={4} lg={3} xl={3} xxl={3}>
+              <Col sm={6} md={4} lg={5} xl={4} xxl={4}>
                 <BuyCard></BuyCard>
               </Col>
             </Row></Container>
