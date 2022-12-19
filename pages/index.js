@@ -12,7 +12,7 @@ export default function Home() {
         <Header></Header>
         <div style={{ display: "flex" }}>
           <Menu></Menu>
-          <div>berke</div>
+          <div>HTG</div>
         </div>
        
       </main>
