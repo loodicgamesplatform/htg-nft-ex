@@ -25,12 +25,13 @@ const Menu = ({ text, img, color }) => {
           height: "100%",
         }}
       >
+        <a  href="/profile" style={{ color: "inherit" }}>
         <MenuButton
           style={{ marginTop: 15 }}
           text="PROFILE"
           color="#FECE00"
           image="./assets/menuicons/Profile.png"
-        ></MenuButton>
+        ></MenuButton></a>
         <a href="/market" style={{ color: "inherit" }}>
           <MenuButton
             text="MARKET"
@@ -38,11 +39,12 @@ const Menu = ({ text, img, color }) => {
             image="./assets/menuicons/Market.png"
           ></MenuButton>
         </a>
+        <a href="/games" style={{ color: "inherit" }}>
         <MenuButton
           text="GAMES"
           color="#FF0000"
           image="./assets/menuicons/Games.png"
-        ></MenuButton>
+        ></MenuButton></a>
         <a style={{ color: "inherit" }} href="/events">
           <MenuButton
             text="EVENTS"
