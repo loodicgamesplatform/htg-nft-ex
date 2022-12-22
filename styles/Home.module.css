@@ -2,6 +2,12 @@
   font-family: "Jost";
   src: url("../public/assets/fonts/Jost-SemiBold.ttf");
 }
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("../public/assets/fonts/IBMPlexSans-SemiBold.ttf");
+}
+
+
 
 .walletbutton {
   position: absolute;
@@ -27,6 +33,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 .submain{
   width: 100%;
@@ -238,8 +245,52 @@ padding-top: 5px;
   background-image: url(../public/assets/i/screen.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  min-height: 100vh;
 
 }
+.textmin{
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 23px;
+}
+.passtext{
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 23px;
+text-decoration-line: underline;
+}
+
+.textbig{
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 46px;
+padding-top: 40px;
+}
+.yellowmin{font-family: 'IBMPlexSans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+
+  padding-top:30px ;
+  color: #FECE00;}
+
+  .purplebig {
+    padding-top: 20px;
+    font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 69px;
+color: #400093;
+text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+  }
 
 .main {
   min-height: 100vh;
@@ -356,6 +407,51 @@ padding-top: 5px;
 
   margin-left: 10%;
   flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFC;
+  padding: 10px;
+  gap: 10px;
+  background-color: rgba(0,0,0,0);
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #4B4A4A;
+  max-height: 50px;
+}
+.inputtitle{
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 29px;
+color: #FFFFFF;
+padding-top: 6px;
+padding-bottom: 4px;
+}
+.inputsubtitle{
+  font-family: 'IBM Plex Sans';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #FECE00;
+padding-top: 4px;
+padding-bottom: 4px;
+}
+
+.checkboxdesc{
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 23px;
+padding-left: 25px;
 }
 
 .votesmenutitle {

@@ -26,7 +26,7 @@ const index = () => {
               selection={forumComp}
               item1="Channels"
               item2="My Posts"
-              item3="All Posts"
+              item3="All Posts-"
             ></Sub>
             {forumComp === "Channels" ? (
               <Channels />
