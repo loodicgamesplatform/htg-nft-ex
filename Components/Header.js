@@ -11,6 +11,7 @@ const Header = () => {
           <img className={styles.img} src="./assets/i/logo.png"></img>
         </a>
         <div style={{ display: "flex", marginRight: 110, alignItems:"center" }}>
+          <WalletButton></WalletButton>
         <a style={{ color: "inherit" }} href="/login">
           <LoginButton
             text="Login In"

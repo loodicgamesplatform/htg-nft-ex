@@ -6,18 +6,26 @@
   font-family: "IBMPlexSans";
   src: url("../public/assets/fonts/IBMPlexSans-SemiBold.ttf");
 }
-
-
-
-.walletbutton {
-  position: absolute;
-  width: 270px;
-  height: 41px;
-  justify-content: right;
-  top: 71px;
-  background-color: #FECE00;
-  border-radius: 10px;
+.walletid{
   font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 23px;
+
+
+color: #FECE00;
+}
+.walletbutton {
+  
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+  top: 71px;
+  background-color: #FECE0066;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -25,81 +33,80 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0 0 2px #4B4A4A;
+  color: #ffffff;
+  text-shadow: 0 0 2px #4b4a4a;
+  padding-left: 30px;
+  padding-right: 30px;
 }
-.bodydiv{
+.bodydiv {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.submain{
+.submain {
   width: 100%;
   height: 60px;
   display: flex;
   border: 1px solid rgba(255, 255, 252, 0.1);
 }
 
-.sub{
+.sub {
   width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor:pointer;
-  font-family: 'Jost';
+  cursor: pointer;
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 29px;
-  
 }
 
-.carddiv{
+.carddiv {
   width: 100%;
-  background-color:  #FFFFFC1A;
+  background-color: #fffffc1a;
   height: 300px;
   border-radius: 10px;
   max-width: 250px;
   margin: 20px;
   padding: 20px;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
-.cardbutton{
+.cardbutton {
   width: 100%;
   height: 40px;
-  background-color: #048BA866;
+  background-color: #048ba866;
   max-width: 120px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: auto;
   border-radius: 5px;
-  border: 2px solid #048BA8;
+  border: 2px solid #048ba8;
 }
-.buycardbutton{
+.buycardbutton {
   width: 100%;
   height: 40px;
   background-color: #40009366;
   max-width: 120px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: auto;
   border-radius: 5px;
-  border: 2px solid #400093
+  border: 2px solid #400093;
 }
-
 
 .channelcontainer {
   width: 100%;
   display: flex;
   justify-content: center;
   height: 181px;
-  background-color: #FFFFFC1A;
+  background-color: #fffffc1a;
   border-radius: 10px;
   margin-left: 25px;
   margin-right: 25px;
@@ -109,7 +116,7 @@
 }
 
 .channeltitle {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -119,24 +126,21 @@
   overflow: hidden;
   text-overflow: ellipsis;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-
-
 .channelsubtitle {
-
-  font-family: 'IBM Plex Sans';
+  font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
   line-height: 31px;
   padding-bottom: 20px;
-padding-top: 5px;
+  padding-top: 5px;
 }
 
 .channels {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -147,7 +151,7 @@ padding-top: 5px;
 }
 
 .newpost {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -157,19 +161,16 @@ padding-top: 5px;
   padding-bottom: 35px;
 }
 
-
 .postcontainer {
   width: 30%;
   display: flex;
   height: 218px;
-  background-color: #FFFFFC1A;
+  background-color: #fffffc1a;
   border-radius: 10px;
-
 }
 
 .postname {
-
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -177,25 +178,22 @@ padding-top: 5px;
   display: flex;
   padding-top: 20px;
   padding-left: 35px;
-
 }
 
 .postdate {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 23px;
   display: flex;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
   padding-left: 35px;
 }
 
-
 .posttitle {
-
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -205,97 +203,91 @@ padding-top: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .postsub {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 35px;
   display: flex;
-  color: #FFFFFF;
+  color: #ffffff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
 }
 
 .postpost {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 35px;
   display: flex;
-  color: #FFFFFF;
+  color: #ffffff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
 }
-
-
-
-
-
 
 .container {
   background-image: url(../public/assets/i/screen.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 100vh;
+}
+.textmin {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
+.passtext {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration-line: underline;
+}
 
+.textbig {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  padding-top: 40px;
 }
-.textmin{
-  font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 23px;
-}
-.passtext{
-  font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 23px;
-text-decoration-line: underline;
-}
-
-.textbig{
-  font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 46px;
-padding-top: 40px;
-}
-.yellowmin{font-family: 'IBMPlexSans';
+.yellowmin {
+  font-family: "IBMPlexSans";
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
 
-  padding-top:30px ;
-  color: #FECE00;}
+  padding-top: 30px;
+  color: #fece00;
+}
 
-  .purplebig {
-    padding-top: 20px;
-    font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 48px;
-line-height: 69px;
-color: #400093;
-text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
-  }
+.purplebig {
+  padding-top: 20px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  color: #400093;
+  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+}
 
 .main {
   min-height: 100vh;
   flex: 1;
- 
+
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -346,7 +338,6 @@ text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
   align-items: center;
 }
 
-
 .footerindiv {
   display: flex;
   justify-content: center;
@@ -367,7 +358,7 @@ text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .loginfont {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -377,17 +368,14 @@ text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 
-
 .header {
   width: 100%;
 
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #FFFFFC1A;
-  box-shadow: 0px 4px 10px 0px #72726C;
-
+  border-bottom: 1px solid #fffffc1a;
+  box-shadow: 0px 4px 10px 0px #72726c;
 }
 
 .img {
@@ -398,7 +386,6 @@ text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
   margin-left: 42px;
   padding-top: 5px;
   padding-bottom: 5px;
-
 }
 
 .votesmenudiv {
@@ -412,50 +399,50 @@ text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
 .input {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #FFFFFC;
+  border: 1px solid #fffffc;
   padding: 10px;
   gap: 10px;
-  background-color: rgba(0,0,0,0);
-  font-family: 'Jost';
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 29px;
-  color: #4B4A4A;
+  color: #4b4a4a;
   max-height: 50px;
 }
-.inputtitle{
-  font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 29px;
-color: #FFFFFF;
-padding-top: 6px;
-padding-bottom: 4px;
+.inputtitle {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+  padding-top: 6px;
+  padding-bottom: 4px;
 }
-.inputsubtitle{
-  font-family: 'IBM Plex Sans';
-font-style: italic;
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
-color: #FECE00;
-padding-top: 4px;
-padding-bottom: 4px;
+.inputsubtitle {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fece00;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
-.checkboxdesc{
-  font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 23px;
-padding-left: 25px;
+.checkboxdesc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  padding-left: 25px;
 }
 
 .votesmenutitle {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -468,7 +455,6 @@ padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 
 .votesdiv {
   display: flex;
@@ -491,17 +477,15 @@ padding-left: 25px;
 }
 
 .statstitle {
-
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 35px;
-
 }
 
 .statsdescription {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -509,12 +493,10 @@ padding-left: 25px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
 }
 
 .statsstatus {
-
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -527,7 +509,6 @@ padding-left: 25px;
   width: 33%;
   height: 100%;
   background-color: rgba(255, 255, 252, 0.1);
-  ;
   border-radius: 10px;
 }
 
@@ -539,9 +520,7 @@ padding-left: 25px;
   width: 66%;
   height: 100%;
   background-color: rgba(255, 255, 252, 0.1);
-  ;
   border-radius: 10px;
-
 }
 
 .headerdiv {
@@ -549,7 +528,6 @@ padding-left: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .headerindiv {
@@ -560,7 +538,7 @@ padding-left: 25px;
   max-width: 200px;
   position: relative;
   height: 80px;
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -568,8 +546,6 @@ padding-left: 25px;
   display: flex;
   align-items: center;
   text-align: center;
-
-
 
   text-align: center;
 }
