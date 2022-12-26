@@ -1,5 +1,6 @@
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import React from "react";
+import OutsideClickHandler from "react-outside-click-handler";
 import styles from "../styles/Home.module.css";
 const ProfileDrop = () => {
   return (
