@@ -1,6 +1,7 @@
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import { Provider } from "react-redux";
+import { BrowserRouter as Router } from "react-router-dom";
 import {
   legacy_createStore as createStore,
   applyMiddleware,
@@ -11,8 +12,8 @@ import thunk from "redux-thunk";
 
 import usersReducers from "../reducers/usersReducers";
 const rootReducer = combineReducers({
-  user:usersReducers,
-})
+  user: usersReducers,
+});
 const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(thunk))
@@ -25,7 +26,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThirdwebProvider desiredChainId={activeChainId}>
       <Provider store={store}>
-        <Component {...pageProps} />
+       
+          <Component {...pageProps} />
+      
       </Provider>
     </ThirdwebProvider>
   );

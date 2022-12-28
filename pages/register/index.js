@@ -5,7 +5,7 @@ import Checkbox from "../../Components/Checkbox";
 import Input from "../../Components/Input";
 import styles from "../../styles/Home.module.css";
 
-import { useHistory } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import { useDispatch ,useSelector } from "react-redux";
 import { signUp } from "../../actions/userActions.js";
 
@@ -17,7 +17,10 @@ const index = ({  }) => {
     confirmPassword: "",
   };
 
-  const history = useHistory();
+  const userState = useSelector((state) => state.user)
+  const {error} = userState
+
+  const navigate = useNavigate()
   const [form, setForm] = useState(initialFormData);
   const [login,setLogin] = useState(true)
   const dispatch = useDispatch();
@@ -92,7 +95,7 @@ const index = ({  }) => {
                 onClick={(e) => {
                   e.preventDefault()
                   if(!login){
-                    dispatch(signUp(form,history))
+                    dispatch(signUp(form,navigate))
                   }
                 }}
                   style={{
