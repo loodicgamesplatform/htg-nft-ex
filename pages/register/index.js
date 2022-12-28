@@ -4,7 +4,24 @@ import { Col, Container, Row } from "react-grid-system";
 import Checkbox from "../../Components/Checkbox";
 import Input from "../../Components/Input";
 import styles from "../../styles/Home.module.css";
-const index = () => {
+
+import { useHistory } from "react-router-dom";
+import { useDispatch ,useSelector } from "react-redux";
+import { signUp } from "../../actions/userActions.js";
+
+const index = ({  }) => {
+  const initialFormData = {
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  };
+
+  const history = useHistory();
+  const [form, setForm] = useState(initialFormData);
+  const [login,setLogin] = useState(true)
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.container} style={{ height: "100%", width: "100%" }}>
       <Container>
@@ -49,13 +66,18 @@ const index = () => {
                 </a>
               </div>
 
-              <Input title="E-mail" placeholder="Email Address"></Input>
-              <Input title="Password" placeholder="Password"></Input>
-              <Input title="Confirm Password" placeholder="Password"></Input>
+              <Input
+                title="E-mail"
+                placeholder="Email Address"
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+              ></Input>
+              <Input title="Password" placeholder="Password" onChange={(e) => setForm({ ...form, password: e.target.value })}></Input>
+              <Input title="Confirm Password" placeholder="Password" onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })}></Input>
               <Input
                 title="Username"
                 placeholder="Other players see this name in the game"
                 subtitle="You can change this at a later point."
+                onChange={(e) => setForm({ ...form, username: e.target.value })}
               ></Input>
               <Input
                 title="Referral Code (optional)"
@@ -67,6 +89,12 @@ const index = () => {
 
               <a href="/done" style={{ color: "inherit" }}>
                 <div
+                onClick={(e) => {
+                  e.preventDefault()
+                  if(!login){
+                    dispatch(signUp(form,history))
+                  }
+                }}
                   style={{
                     width: "100%",
                     display: "flex",
