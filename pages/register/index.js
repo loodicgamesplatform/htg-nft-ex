@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-grid-system";
 
 import Checkbox from "../../Components/Checkbox";
 import Input from "../../Components/Input";
 import styles from "../../styles/Home.module.css";
 
-import { useNavigate} from "react-router-dom";
+import { useRouter} from "next/router";
 import { useDispatch ,useSelector } from "react-redux";
 import { signUp } from "../../actions/userActions.js";
 
@@ -20,7 +20,7 @@ const index = ({  }) => {
   const userState = useSelector((state) => state.user)
   const {error} = userState
 
-  const navigate = useNavigate()
+  const router = useRouter()
   const [form, setForm] = useState(initialFormData);
   const [login,setLogin] = useState(true)
   const dispatch = useDispatch();
@@ -90,12 +90,13 @@ const index = ({  }) => {
               <Checkbox desc="I accept the Terms of Service and Privacy Policy"></Checkbox>
               <Checkbox desc="I want exclusive items and stay up to date with the latest news, releases, and events"></Checkbox>
 
-              <a href="/done" style={{ color: "inherit" }}>
+           
                 <div
                 onClick={(e) => {
                   e.preventDefault()
                   if(!login){
-                    dispatch(signUp(form,navigate))
+                    dispatch(signUp(form,router))
+                    console.log(form)
                   }
                 }}
                   style={{
@@ -114,7 +115,7 @@ const index = ({  }) => {
                 >
                   <div className={styles.votesmenutitle}>Sign Up</div>
                 </div>
-              </a>
+            
             </div>
           </Col>
         </Row>

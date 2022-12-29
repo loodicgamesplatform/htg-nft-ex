@@ -1,7 +1,7 @@
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import { Provider } from "react-redux";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes } from "react-router-dom";
 import {
   legacy_createStore as createStore,
   applyMiddleware,
@@ -27,8 +27,8 @@ function MyApp({ Component, pageProps }) {
     <ThirdwebProvider desiredChainId={activeChainId}>
       <Provider store={store}>
        
-          <Component {...pageProps} />
-      
+            <Component {...pageProps} />
+   
       </Provider>
     </ThirdwebProvider>
   );
