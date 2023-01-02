@@ -342,10 +342,14 @@
 }
 
 .container {
-  background-image: url(../public/assets/i/screen.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  min-height: 100vh;
+  background-image: url(../public/assets/i/screen.png);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  
 
 }
 
