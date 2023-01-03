@@ -14,7 +14,9 @@ const Menu = ({ text, img, color }) => {
         overflow: "hidden",
         justifyContent: "center",
         borderRight: "1px solid #FFFFFC1A",
-        marginTop: 50,
+        backgroundColor: "#000000CC",
+        paddingTop: 50,
+        overflow: "auto",
       }}
     >
       <div
@@ -25,13 +27,14 @@ const Menu = ({ text, img, color }) => {
           height: "100%",
         }}
       >
-        <a  href="/profile" style={{ color: "inherit" }}>
-        <MenuButton
-          style={{ marginTop: 15 }}
-          text="PROFILE"
-          color="#FECE00"
-          image="./assets/menuicons/Profile.png"
-        ></MenuButton></a>
+        <a href="/profile" style={{ color: "inherit" }}>
+          <MenuButton
+            style={{ marginTop: 15 }}
+            text="PROFILE"
+            color="#FECE00"
+            image="./assets/menuicons/Profile.png"
+          ></MenuButton>
+        </a>
         <a href="/market" style={{ color: "inherit" }}>
           <MenuButton
             text="MARKET"
@@ -40,11 +43,12 @@ const Menu = ({ text, img, color }) => {
           ></MenuButton>
         </a>
         <a href="/games" style={{ color: "inherit" }}>
-        <MenuButton
-          text="GAMES"
-          color="#FF0000"
-          image="./assets/menuicons/Games.png"
-        ></MenuButton></a>
+          <MenuButton
+            text="GAMES"
+            color="#FF0000"
+            image="./assets/menuicons/Games.png"
+          ></MenuButton>
+        </a>
         <a style={{ color: "inherit" }} href="/events">
           <MenuButton
             text="EVENTS"
@@ -59,12 +63,12 @@ const Menu = ({ text, img, color }) => {
             image="./assets/menuicons/voting.png"
           ></MenuButton>
         </a>
-        <a
-          style={{ color: "inherit" }}
-          href="/forum"
-         
-        >
-          <MenuButton text="FORUM" color="#048BA8" image="./assets/menuicons/forum.png"></MenuButton>
+        <a style={{ color: "inherit" }} href="/forum">
+          <MenuButton
+            text="FORUM"
+            color="#048BA8"
+            image="./assets/menuicons/forum.png"
+          ></MenuButton>
         </a>
         <MenuButton
           text="STATS"
