@@ -16,7 +16,7 @@ const ProfileMenu = ({ lvl, image, name }) => {
         setOpen(false);
       }}
     >
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div style={{ display: "flex", flexDirection: "column",padding:30 }}>
         <div
           className={styles.profilemenudiv}
           style={{

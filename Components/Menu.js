@@ -4,28 +4,10 @@ import styles from "../styles/Home.module.css";
 const Menu = ({ text, img, color }) => {
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        height: "100%",
-        position: "relative",
-        width: 300,
-        overflow: "hidden",
-        justifyContent: "center",
-        borderRight: "1px solid #FFFFFC1A",
-        backgroundColor: "#000000CC",
-        paddingTop: 50,
-        overflow: "auto",
-      }}
+      className={styles.sidemenudiv}
     >
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "space-between",
-          height: "100%",
-        }}
+        className={styles.sidemenuindiv}
       >
         <a href="/profile" style={{ color: "inherit" }}>
           <MenuButton

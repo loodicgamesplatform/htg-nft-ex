@@ -21,12 +21,12 @@ const WalletButton = () => {
     initConnection();
   }, []);
   return (
-    
+    <div style={{padding:30}}>
     <div className={styles.walletbutton} onClick={initConnection}>
        {account != "" ? (
           <p className={styles.walletid}>{"ID: " + account.substring(0, 9)}</p>
         ) : (<div>CONNECT WALLET</div>)}
-    </div>
+    </div></div>
   );
 };
 

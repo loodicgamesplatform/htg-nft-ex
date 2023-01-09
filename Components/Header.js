@@ -2,6 +2,7 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 import React from "react";
 import styles from "../styles/Home.module.css";
 import LoginButton from "./LoginButton";
+import MobileMenu from "./MobileMenu";
 import ProfileMenu from "./ProfileMenu";
 import WalletButton from "./WalletButton";
 const Header = () => {
@@ -12,17 +13,20 @@ const Header = () => {
           <img className={styles.img} src="./assets/i/logo.png"></img>
         </a>
         <div
-          style={{ display: "flex", marginRight: 110, alignItems: "center" }}
+          style={{display: "flex", marginRight: 110, alignItems: "center" }}
         >
+          <div></div>
           <WalletButton></WalletButton>
           <ProfileMenu lvl="LVL 0" name="sticky berkin" />
-          <a style={{ color: "inherit" }} href="/login">
+        
+          <a style={{color: "inherit" }} href="/login">
             <LoginButton
               text="Login In"
               color="#40009366"
               border="3px solid #400093"
             ></LoginButton>
           </a>
+          
           <a href="/register" style={{ color: "inherit" }}>
             <LoginButton
               text="Sign Up"
@@ -30,6 +34,7 @@ const Header = () => {
               border="3px solid #FECE00"
             ></LoginButton>
           </a>
+          <MobileMenu></MobileMenu>
         </div>
       </div>
     </div>

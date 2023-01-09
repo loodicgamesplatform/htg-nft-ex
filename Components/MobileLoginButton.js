@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 import styles from "../styles/Home.module.css";
-const LoginButton = ({ color, text, border,textColor }) => {
+
+const MobileLoginButton = ({ color, text, border,textColor }) => {
   return (
-    <div className={styles.loginbutton}>
     <div
       className={styles.loginfont}
       style={{
@@ -19,8 +19,8 @@ const LoginButton = ({ color, text, border,textColor }) => {
       }}
     >
       {text}
-    </div></div>
-  );
-};
+    </div>
+  )
+}
 
-export default LoginButton;
+export default MobileLoginButton
