@@ -10,7 +10,7 @@ const MobileMenuDrop = ({onClose}) => {
   
   return (
     <div className={styles.mobileside}>
-      <div onClick={onClose} style={{width:"100%" , display:"flex",color:"#FECE00" , justifyContent:"flex-end",paddingTop:20,paddingRight:20}}>
+      <div onClick={onClose} style={{cursor:"pointer",width:"100%" , display:"flex",color:"#FECE00" , justifyContent:"flex-end",paddingTop:20,paddingRight:20}}>
         <FeatherIcon icon="x" />
       </div>
       <div

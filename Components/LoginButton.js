@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 const LoginButton = ({ color, text, border,textColor }) => {
   return (
-    <div className={styles.loginbutton}>
+    <div className={styles.loginbutton} >
     <div
       className={styles.loginfont}
       style={{

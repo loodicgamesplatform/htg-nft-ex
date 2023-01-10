@@ -3,24 +3,27 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import LoginButton from "./LoginButton";
 import MobileMenu from "./MobileMenu";
+import MobileProfile from "./MobileProfile";
 import ProfileMenu from "./ProfileMenu";
 import WalletButton from "./WalletButton";
 const Header = () => {
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
       <div className={styles.header}>
+        <div style={{display:"flex",justifyContent:"space-between"}}>
        <div style={{display:"flex", justifyContent:"space-between",alignItems:"center"}}>
-        <div style={{paddingLeft:30}}><MobileMenu></MobileMenu></div>
+        <div style={{paddingLeft:40, paddingRight:30}}><MobileMenu></MobileMenu></div>
         
-        <a style={{ color: "inherit" }} href="/">
+        <a style={{ color: "inherit", minWidth:100 }} href="/">
           <img className={styles.img} src="./assets/i/logo.png"></img>
-        </a></div>
+        </a></div>  <MobileProfile/></div>
         <div
           style={{ display: "flex", marginRight: 110, alignItems: "center" }}
         >
           <div></div>
           <WalletButton></WalletButton>
           <ProfileMenu lvl="LVL 0" name="sticky berkin" />
+        
 
           <a style={{ color: "inherit" }} href="/login">
             <LoginButton
