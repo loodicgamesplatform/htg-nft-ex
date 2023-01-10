@@ -214,6 +214,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 29px;
+ 
+
 }
 
 .carddiv {
@@ -386,10 +388,14 @@
 }
 
 .container {
-  background-image: url(../public/assets/i/screen.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  min-height: 100vh;
+  background-image: url(../public/assets/i/screen.png);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  
 
 }
 
@@ -429,6 +435,10 @@
   padding-top: 30px;
   color: #fece00;
 }
+.logindiv{
+  height: 100vh;
+   width: 100% ;
+}
 
 .purplebig {
   padding-top: 20px;
@@ -439,6 +449,11 @@
   line-height: 69px;
   color: #400093;
   text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+  height: 600;
+  background-color: "#FECE00";
+  border-radius: 10;
+  margin-top: 135;
+  text-align: center;
 }
 
 .main {
@@ -568,6 +583,7 @@
 }
 .mobilemenudiv{
   display: none;
+  color:#FECE00
 }
 
 @media screen and (max-width: 1080px) {
@@ -591,6 +607,23 @@
   }
   .sub {
     width: 33%;
+  }
+
+  
+
+  .purplebig{
+    display: none;
+    
+  }
+
+}
+
+@media screen and (max-width: 500px){
+  .sub5{
+    font-weight: 600;
+    font-size: 14px;
+    line-height:18px;
+    border-right: 1px solid #fffffc1a;
   }
 }
 

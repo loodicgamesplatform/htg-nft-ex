@@ -6,14 +6,15 @@ import Input from "../../Components/Input";
 import styles from "../../styles/Home.module.css";
 const index = () => {
   return (
-    <div className={styles.container} style={{ height: "100%", width: "100%" }}>
+    <div className={styles.container} >
+      <div className={styles.logindiv}>
       <Container>
         <Row>
           <Col sm={6} md={6} lg={6} xl={6} xxl={6}>
             <div  className={styles.purplebig}
               style={{
                 height: 600,
-                width: "100%",
+               
                 backgroundColor: "#FECE00",
                 borderRadius: 10,
                 marginTop: 135,
@@ -90,7 +91,7 @@ const index = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </Container></div>
     </div>
   )
 }

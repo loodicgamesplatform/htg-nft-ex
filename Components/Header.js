@@ -9,24 +9,27 @@ const Header = () => {
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
       <div className={styles.header}>
+       <div style={{display:"flex", justifyContent:"space-between",alignItems:"center"}}>
+        <div style={{paddingLeft:30}}><MobileMenu></MobileMenu></div>
+        
         <a style={{ color: "inherit" }} href="/">
           <img className={styles.img} src="./assets/i/logo.png"></img>
-        </a>
+        </a></div>
         <div
-          style={{display: "flex", marginRight: 110, alignItems: "center" }}
+          style={{ display: "flex", marginRight: 110, alignItems: "center" }}
         >
           <div></div>
           <WalletButton></WalletButton>
           <ProfileMenu lvl="LVL 0" name="sticky berkin" />
-        
-          <a style={{color: "inherit" }} href="/login">
+
+          <a style={{ color: "inherit" }} href="/login">
             <LoginButton
               text="Login In"
               color="#40009366"
               border="3px solid #400093"
             ></LoginButton>
           </a>
-          
+
           <a href="/register" style={{ color: "inherit" }}>
             <LoginButton
               text="Sign Up"
@@ -34,7 +37,6 @@ const Header = () => {
               border="3px solid #FECE00"
             ></LoginButton>
           </a>
-          <MobileMenu></MobileMenu>
         </div>
       </div>
     </div>
