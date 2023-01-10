@@ -12,7 +12,7 @@ import ActiveEvents from "../../Containers/EventsPage/ActiveEvents";
 import PastEvents from "../../Containers/EventsPage/PastEvents";
 const index = () => {
   const [eventsComp, setEventsComp] = useState("My Events");
-  setConfiguration({  gridColumns: 20 });
+ 
   return (
     <div className={styles.container}>
       <main className={styles.main} style={{ overflow: "hidden" }}>

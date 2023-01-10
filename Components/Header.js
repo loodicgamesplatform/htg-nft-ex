@@ -12,11 +12,11 @@ const Header = () => {
       <div className={styles.header}>
         <div style={{display:"flex",justifyContent:"space-between"}}>
        <div style={{display:"flex", justifyContent:"space-between",alignItems:"center"}}>
-        <div style={{paddingLeft:40, paddingRight:30}}><MobileMenu></MobileMenu></div>
-        
+        <div style={{paddingLeft:40}}><MobileMenu></MobileMenu></div>
+        <div style={{width:"100%",display:"flex",justifyContent:"space-between"}}>
         <a style={{ color: "inherit", minWidth:100 }} href="/">
           <img className={styles.img} src="./assets/i/logo.png"></img>
-        </a></div>  <MobileProfile/></div>
+        </a></div>  <MobileProfile/></div></div>
         <div
           style={{ display: "flex", marginRight: 110, alignItems: "center" }}
         >

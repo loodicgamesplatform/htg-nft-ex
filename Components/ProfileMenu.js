@@ -43,7 +43,7 @@ const ProfileMenu = ({ lvl, image, name }) => {
               cursor: "pointer",
             }}
           >
-            <FeatherIcon icon="arrow-down-circle" />
+             {open ? <FeatherIcon icon="arrow-up-circle" />  :<FeatherIcon icon="arrow-down-circle" /> }
           </div>
         </div>
         {open ? <ProfileDrop setOpen={open} /> : null}
