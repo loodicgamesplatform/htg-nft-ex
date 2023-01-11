@@ -31,7 +31,7 @@ const Header = () => {
               }}
             >
               <Link href="/">
-                <a>
+                <a style={{marginLeft:30}}>
                 <img className={styles.img} src="./assets/i/logo.png"></img></a>
               </Link>
             </div>

@@ -598,8 +598,9 @@
   width: 100%;
   max-width: 122px;
   height: auto;
+  display: block;
   margin-right: 10px;
-  margin-left: 42px;
+ min-width: 80px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
