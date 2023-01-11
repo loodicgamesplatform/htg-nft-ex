@@ -1,16 +1,16 @@
 import React from "react";
 import { Col, Container, Row } from "react-grid-system";
-
+import Link from "next/link";
 import Checkbox from "../../Components/Checkbox";
 import Input from "../../Components/Input";
 import styles from "../../styles/Home.module.css";
-const index = () => {
+
+
+
+export default function Index() {
   return (
-    <div
-      className={styles.container}
-      
-    >
-         <div className={styles.logindiv}>
+    <div className={styles.container}>
+      <div className={styles.logindiv}>
         <Container>
           <Row>
             <Col sm={6} md={6} lg={6} xl={6} xxl={6}>
@@ -36,7 +36,7 @@ const index = () => {
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                  <a href="/" style={{ color: "inherit" }}>
+                <Link href="/">
                     <div
                       style={{
                         width: 30,
@@ -50,7 +50,7 @@ const index = () => {
                     >
                       X
                     </div>
-                  </a>
+                  </Link>
                 </div>
 
                 <Input title="E-mail" placeholder="Email Address"></Input>
@@ -69,7 +69,7 @@ const index = () => {
                 <Checkbox desc="I accept the Terms of Service and Privacy Policy"></Checkbox>
                 <Checkbox desc="I want exclusive items and stay up to date with the latest news, releases, and events"></Checkbox>
 
-                <a href="/done" style={{ color: "inherit" }}>
+                <Link href="/done">
                   <div
                     style={{
                       width: "100%",
@@ -87,7 +87,7 @@ const index = () => {
                   >
                     <div className={styles.votesmenutitle}>Sign Up</div>
                   </div>
-                </a>
+                </Link>
               </div>
             </Col>
           </Row>
@@ -95,6 +95,4 @@ const index = () => {
       </div>
     </div>
   );
-};
-
-export default index;
+}

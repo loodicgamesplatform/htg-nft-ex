@@ -9,7 +9,7 @@ import MyGames from "../../Containers/GamesPage/MyGames";
 import AllGames from "../../Containers/GamesPage/AllGames";
 import Upcoming from "../../Containers/GamesPage/Upcoming";
 
-const index = () => {
+  export default function Index () {
   const [gamesComp, setGamesComp] = useState("My Games");
   return (
     <div className={styles.container}>
@@ -39,4 +39,4 @@ const index = () => {
   );
 };
 
-export default index;
+

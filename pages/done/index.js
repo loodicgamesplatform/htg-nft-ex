@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-grid-system";
+import Link from 'next/link'
 
 import Checkbox from "../../Components/Checkbox";
 import Input from "../../Components/Input";
@@ -33,7 +34,7 @@ const index = () => {
             }}
           >
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
-             <a href="/" style={{color:"inherit"}}>
+            <Link href="/">
               <div
                 
                 style={{
@@ -47,7 +48,7 @@ const index = () => {
                 }}
               >
                 X
-              </div></a>
+              </div></Link>
             </div>
             <div className={styles.textbig}>CONGRATS!</div>
             <div className={styles.yellowmin}>You started your journey to become a prestigious member of Sticky community.</div>

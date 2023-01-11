@@ -10,7 +10,10 @@ import Sub from "../../Components/Sub";
 import Channels from "../../Containers/ForumPage/Channels";
 import MyPosts from "../../Containers/ForumPage/MyPosts";
 import AllPosts from "../../Containers/ForumPage/AllPosts";
-const index = () => {
+
+
+
+ export default function Index () {
   const [forumComp, setForumComp] = useState("Channels");
   return (
     <div className={styles.container}>
@@ -43,4 +46,4 @@ const index = () => {
   );
 };
 
-export default index;
+

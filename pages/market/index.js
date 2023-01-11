@@ -8,7 +8,9 @@ import Planets from "../../Containers/MarketPage/Planets";
 import Tickets from "../../Containers/MarketPage/Tickets";
 import Wearables from "../../Containers/MarketPage/Wearables";
 import styles from "../../styles/Home.module.css";
-const index = () => {
+
+
+export default function Index (){
   const [marketComp, setMarketComp] = useState("Characters");
   return (
     <div className={styles.container}>
@@ -46,4 +48,4 @@ const index = () => {
   );
 };
 
-export default index;
+

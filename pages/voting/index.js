@@ -9,8 +9,12 @@ import MyVotes from "../../Containers/VotesPage/MyVotes";
 import ActiveVotes from "../../Containers/VotesPage/ActiveVotes";
 import PastVotes from "../../Containers/VotesPage/PastVotes";
 import Sub from "../../Components/Sub";
-const index = () => {
-  const [votesComp, setVotesComp] = useState("My Votes");
+
+
+const [votesComp, setVotesComp] = useState("My Votes");
+export default function Index () {
+
+  
   return (
     <div className={styles.container}>
       <main className={styles.main} style={{ overflow: "hidden" }}>
@@ -39,4 +43,3 @@ const index = () => {
   )
 }
 
-export default index

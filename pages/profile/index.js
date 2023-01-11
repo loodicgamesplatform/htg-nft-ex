@@ -9,7 +9,7 @@ import Friends from "../../Containers/ProfilePage/Friends";
 import Inventory from "../../Containers/ProfilePage/Inventory";
 
 import styles from "../../styles/Home.module.css";
-const index = () => {
+export default function Index (){
   const [profileComp, setProfileComp] = useState("Dashboard");
 
   return (
@@ -48,4 +48,4 @@ const index = () => {
   );
 };
 
-export default index;
+

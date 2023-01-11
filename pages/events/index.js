@@ -10,9 +10,12 @@ import Sub from "../../Components/Sub";
 import MyEvents from "../../Containers/EventsPage/MyEvents";
 import ActiveEvents from "../../Containers/EventsPage/ActiveEvents";
 import PastEvents from "../../Containers/EventsPage/PastEvents";
-const index = () => {
-  const [eventsComp, setEventsComp] = useState("My Events");
+
+
+
  
+export default function Index () {
+  const [eventsComp, setEventsComp] = useState("My Events");
   return (
     <div className={styles.container}>
       <main className={styles.main} style={{ overflow: "hidden" }}>
@@ -41,4 +44,4 @@ const index = () => {
   );
 };
 
-export default index;
+
