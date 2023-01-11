@@ -1,4 +1,5 @@
 import { ConnectWallet } from "@thirdweb-dev/react";
+import Link from "next/link";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import Menu from "../Components/Menu";
