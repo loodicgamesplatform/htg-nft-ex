@@ -31,23 +31,25 @@ const MobileMenuDrop = ({ onClose }) => {
       >
         <div style={{ padding: 10 }}>
           <Link href="/login">
+            <a style={{ color: "inherit" }}>
             <MobileLoginButton
               text="Login In"
               color="#FECE00"
               textColor="#400093"
               border="3px solid #400093"
-            ></MobileLoginButton>
+            ></MobileLoginButton></a>
           </Link>
         </div>
 
         <div style={{ padding: 10 }}>
           <Link href="/register">
+          <a style={{ color: "inherit" }}>
             <MobileLoginButton
               text="Sign Up"
               textColor="#400093"
               color="#FECE00"
               border="3px solid #400093"
-            ></MobileLoginButton>
+            ></MobileLoginButton></a>
           </Link>
         </div>
       </div>
