@@ -11,9 +11,9 @@ import PastVotes from "../../Containers/VotesPage/PastVotes";
 import Sub from "../../Components/Sub";
 
 
-const [votesComp, setVotesComp] = useState("My Votes");
-export default function Index () {
 
+export default function Index () {
+const [votesComp, setVotesComp] = useState("My Votes");
   
   return (
     <div className={styles.container}>
