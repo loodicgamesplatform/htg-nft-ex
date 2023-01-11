@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-grid-system";
-
+import Link from "next/link";
 import Checkbox from "../../Components/Checkbox";
 import Input from "../../Components/Input";
 import styles from "../../styles/Home.module.css";
