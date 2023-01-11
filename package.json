@@ -1,6 +1,6 @@
 {
   "name": "htg-nft-ex",
-  "version": "0.1.0",
+  "package-name": "git+https://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:x-oauth-basic@github.com/berkegenckaya/htg-nft-ex.git",  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
