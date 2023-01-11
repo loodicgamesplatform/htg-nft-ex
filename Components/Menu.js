@@ -1,62 +1,71 @@
 import React from "react";
 import MenuButton from "./MenuButton";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 const Menu = ({ text, img, color }) => {
   return (
-    <div
-      className={styles.sidemenudiv}
-    >
-      <div
-        className={styles.sidemenuindiv}
-      >
-        <a href="/profile" style={{ color: "inherit" }}>
-          <MenuButton
-            style={{ marginTop: 15 }}
-            text="PROFILE"
-            color="#FECE00"
-            image="./assets/menuicons/Profile.png"
-          ></MenuButton>
-        </a>
-        <a href="/market" style={{ color: "inherit" }}>
-          <MenuButton
-            text="MARKET"
-            color="#FF6A00"
-            image="./assets/menuicons/Market.png"
-          ></MenuButton>
-        </a>
-        <a href="/games" style={{ color: "inherit" }}>
-          <MenuButton
-            text="GAMES"
-            color="#FF0000"
-            image="./assets/menuicons/Games.png"
-          ></MenuButton>
-        </a>
-        <a style={{ color: "inherit" }} href="/events">
+    <div className={styles.sidemenudiv}>
+      <div className={styles.sidemenuindiv}>
+        <Link href="/profile">
+          <a style={{color:"inherit"}}>
+            <MenuButton
+              style={{ marginTop: 15 }}
+              text="PROFILE"
+              color="#FECE00"
+              image="./assets/menuicons/Profile.png"
+            ></MenuButton>
+          </a>
+        </Link>
+        <Link href="/market">
+          <a  style={{color:"inherit"}}>
+            <MenuButton
+              text="MARKET"
+              color="#FF6A00"
+              image="./assets/menuicons/Market.png"
+            ></MenuButton>
+          </a >
+        </Link>
+        <Link href="/games">
+          <a  style={{color:"inherit"}}>
+            <MenuButton
+              text="GAMES"
+              color="#FF0000"
+              image="./assets/menuicons/Games.png"
+            ></MenuButton>
+          </a>
+        </Link>
+        <Link href="/events">
+          <a  style={{color:"inherit"}}>
           <MenuButton
             text="EVENTS"
             color="#F700FF"
             image="./assets/menuicons/Events.png"
-          ></MenuButton>
-        </a>
-        <a style={{ color: "inherit" }} href="/voting">
+          ></MenuButton></a>
+        </Link>
+        <Link href="/voting">
+          <a  style={{color:"inherit"}}>
           <MenuButton
             text="VOTING"
             color="#400093"
             image="./assets/menuicons/voting.png"
-          ></MenuButton>
-        </a>
-        <a style={{ color: "inherit" }} href="/forum">
+          ></MenuButton></a>
+        </Link>
+        <Link href="/forum">
+          <a  style={{color:"inherit"}}>
           <MenuButton
             text="FORUM"
             color="#048BA8"
             image="./assets/menuicons/forum.png"
-          ></MenuButton>
-        </a>
-        <MenuButton
-          text="STATS"
-          color="#007dff"
-          image="./assets/menuicons/Stats.png"
-        ></MenuButton>
+          ></MenuButton></a>
+        </Link>
+        <Link href="/stats">
+          <a  style={{color:"inherit"}}>
+          <MenuButton
+            text="STATS"
+            color="#007dff"
+            image="./assets/menuicons/Stats.png"
+          ></MenuButton></a>
+        </Link>
       </div>
     </div>
   );
