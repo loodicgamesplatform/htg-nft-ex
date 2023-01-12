@@ -594,8 +594,12 @@
   box-shadow: 0px 4px 10px 0px #72726c;
 }
 .landlogo {
-	width: min(50vw, 500px);
-  
+	width: min(50%, 500px);
+}
+
+.comingsoon{
+  width: min(50vw, 200px);
+  position: absolute;
 }
 
 .img {
@@ -677,6 +681,11 @@
   }
   .punkpose {
     display: none;
+  }
+  .comingsoon{
+    width: min(50vw, 200px);
+    
+    position: relative;
   }
 
     .mobileprofilediv{
