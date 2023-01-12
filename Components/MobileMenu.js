@@ -11,7 +11,7 @@ const MobileMenu = () => {
   };
   return (
     <div className={styles.mobilemenudiv}>
-      <div onClick={handleOpen} style={{ display: "flex", cursor:"pointer"}}>
+      <div onClick={handleOpen} style={{ display: "flex", cursor:"pointer", paddingRight:20}}>
         <FeatherIcon icon="menu" ></FeatherIcon>
       </div>
       {open ? <MobileMenuDrop setOpen={open} onClose={() => setOpen(false)} /> : null}
