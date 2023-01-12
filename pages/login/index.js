@@ -34,23 +34,24 @@ export default function Index() {
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                  <Link href="/">
-                    <div
-                      style={{
-                        width: 30,
-                        height: 30,
-                        border: "3px solid #FFFFFC",
-                        borderRadius: 5,
-                        textAlign: "center",
+                  <Link legacyBehavior href="/main">
+                    <a style={{ color: "inherit" }}>
+                      <div
+                        style={{
+                          width: 30,
+                          height: 30,
+                          border: "3px solid #FFFFFC",
+                          borderRadius: 5,
+                          textAlign: "center",
 
-                        fontWeight: 700,
-                      }}
-                    >
-                      X
-                    </div>
+                          fontWeight: 700,
+                        }}
+                      >
+                        X
+                      </div>
+                    </a>
                   </Link>
                 </div>
-
                 <Input title="E-mail" placeholder="Email Address"></Input>
                 <Input title="Password" placeholder="Password"></Input>
                 <div className={styles.passtext}>Forgot Password</div>
@@ -69,29 +70,35 @@ export default function Index() {
                     marginBottom: 20,
                   }}
                 >
-                  <div className={styles.votesmenutitle}>Login In</div>
+                  <Link legacyBehavior href="/main">
+                    <a style={{ color: "inherit" }}>
+                      <div className={styles.votesmenutitle}>Login In</div>
+                    </a>
+                  </Link>
                 </div>
                 <div className={styles.textmin} style={{ textAlign: "center" }}>
                   Dont have an account?
-                </div>
-                <Link href="/register">
-                  <div
-                    style={{
-                      width: "100%",
-                      display: "flex",
-                      marginTop: 10,
-                      justifyContent: "center",
-                      textAlign: "center",
+                </div>{" "}
+                <Link legacyBehavior href="/register">
+                  <a style={{ color: "inherit" }}>
+                    
+                    <div
+                      style={{
+                        width: "100%",
+                        display: "flex",
+                        marginTop: 10,
+                        justifyContent: "center",
+                        textAlign: "center",
 
-                      borderRadius: 10,
-                      height: 50,
-                      border: "5px solid #FECE00",
-                      backgroundColor: "#FECE0066",
-                      marginBottom: 50,
-                    }}
-                  >
+                        borderRadius: 10,
+                        height: 50,
+                        border: "5px solid #FECE00",
+                        backgroundColor: "#FECE0066",
+                        marginBottom: 50,
+                      }}
+                    >
                     <div className={styles.votesmenutitle}>Sign Up</div>
-                  </div>
+                  </div></a>
                 </Link>
               </div>
             </Col>

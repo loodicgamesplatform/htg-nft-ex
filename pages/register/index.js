@@ -36,7 +36,8 @@ export default function Index() {
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                <Link href="/">
+                <Link legacyBehavior href="/main">
+                  <a style={{color:"inherit"}}>
                     <div
                       style={{
                         width: 30,
@@ -49,7 +50,7 @@ export default function Index() {
                       }}
                     >
                       X
-                    </div>
+                    </div></a>
                   </Link>
                 </div>
 
@@ -69,7 +70,8 @@ export default function Index() {
                 <Checkbox desc="I accept the Terms of Service and Privacy Policy"></Checkbox>
                 <Checkbox desc="I want exclusive items and stay up to date with the latest news, releases, and events"></Checkbox>
 
-                <Link href="/done">
+                <Link legacyBehavior href="/done">
+                  <a style={{color:"inherit"}}>
                   <div
                     style={{
                       width: "100%",
@@ -86,7 +88,7 @@ export default function Index() {
                     }}
                   >
                     <div className={styles.votesmenutitle}>Sign Up</div>
-                  </div>
+                  </div></a>
                 </Link>
               </div>
             </Col>

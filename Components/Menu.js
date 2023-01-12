@@ -6,7 +6,7 @@ const Menu = ({ text, img, color }) => {
   return (
     <div className={styles.sidemenudiv}>
       <div className={styles.sidemenuindiv}>
-        <Link href="/profile">
+        <Link legacyBehavior href="/profile">
           <a style={{color:"inherit"}}>
             <MenuButton
               style={{ marginTop: 15 }}
@@ -16,7 +16,7 @@ const Menu = ({ text, img, color }) => {
             ></MenuButton>
           </a>
         </Link>
-        <Link href="/market">
+        <Link legacyBehavior href="/market">
           <a  style={{color:"inherit"}}>
             <MenuButton
               text="MARKET"
@@ -25,7 +25,7 @@ const Menu = ({ text, img, color }) => {
             ></MenuButton>
           </a >
         </Link>
-        <Link href="/games">
+        <Link legacyBehavior  href="/games">
           <a  style={{color:"inherit"}}>
             <MenuButton
               text="GAMES"
@@ -34,7 +34,7 @@ const Menu = ({ text, img, color }) => {
             ></MenuButton>
           </a>
         </Link>
-        <Link href="/events">
+        <Link legacyBehavior href="/events">
           <a  style={{color:"inherit"}}>
           <MenuButton
             text="EVENTS"
@@ -42,7 +42,7 @@ const Menu = ({ text, img, color }) => {
             image="./assets/menuicons/Events.png"
           ></MenuButton></a>
         </Link>
-        <Link href="/voting">
+        <Link legacyBehavior href="/voting">
           <a  style={{color:"inherit"}}>
           <MenuButton
             text="VOTING"
@@ -50,7 +50,7 @@ const Menu = ({ text, img, color }) => {
             image="./assets/menuicons/voting.png"
           ></MenuButton></a>
         </Link>
-        <Link href="/forum">
+        <Link legacyBehavior href="/forum">
           <a  style={{color:"inherit"}}>
           <MenuButton
             text="FORUM"
@@ -58,7 +58,7 @@ const Menu = ({ text, img, color }) => {
             image="./assets/menuicons/forum.png"
           ></MenuButton></a>
         </Link>
-        <Link href="/stats">
+        <Link legacyBehavior href="/stats">
           <a  style={{color:"inherit"}}>
           <MenuButton
             text="STATS"

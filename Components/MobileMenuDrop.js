@@ -30,7 +30,7 @@ const MobileMenuDrop = ({ onClose }) => {
         }}
       >
         <div style={{ padding: 10 }}>
-          <Link href="/login">
+          <Link legacyBehavior href="/login">
             <a style={{ color: "inherit" }}>
             <MobileLoginButton
               text="Login In"
@@ -42,7 +42,7 @@ const MobileMenuDrop = ({ onClose }) => {
         </div>
 
         <div style={{ padding: 10 }}>
-          <Link href="/register">
+          <Link legacyBehavior href="/register">
           <a style={{ color: "inherit" }}>
             <MobileLoginButton
               text="Sign Up"
@@ -56,40 +56,40 @@ const MobileMenuDrop = ({ onClose }) => {
 
       <div class={styles.profileli}></div>
       <div class={styles.mobilemenuli}>
-        <Link href="/profile">
+        <Link legacyBehavior href="/profile">
           <a style={{ color: "inherit" }}>PROFILE</a>
         </Link>
       </div>
       <div class={styles.mobilemenuli}>
-        <Link href="/market">
+        <Link legacyBehavior href="/market">
           <a style={{ color: "inherit" }}>MARKET</a>
         </Link>
       </div>
       <div class={styles.mobilemenuli}>
-        <Link href="/games">
+        <Link legacyBehavior href="/games">
          
           <a style={{ color: "inherit" }}>GAMES </a>
         </Link>
       </div>
       <div class={styles.mobilemenuli}>
-        <Link href="/events">
+        <Link legacyBehavior href="/events">
    
           <a style={{ color: "inherit" }}>EVENTS</a>
         </Link>
       </div>
       <div class={styles.mobilemenuli}>
-        <Link href="/voting">
+        <Link legacyBehavior href="/voting">
    
           <a style={{ color: "inherit" }}>VOTING </a>
         </Link>
       </div>
       <div class={styles.mobilemenuli}>
-        <Link href="/forum">
+        <Link legacyBehavior href="/forum">
           <a style={{ color: "inherit" }}>FORUM </a>
         </Link>
       </div>
       <div class={styles.mobilemenuli}>
-        <Link href="/stats">
+        <Link legacyBehavior href="/stats">
        
           <a style={{ color: "inherit" }}>STATS </a>
         </Link>

@@ -30,9 +30,9 @@ const Header = () => {
                 justifyContent: "space-between",
               }}
             >
-              <Link href="/">
-                <a style={{marginLeft:30}}>
-                <img className={styles.img} src="./assets/i/logo.png"></img></a>
+              <Link href="/main" legacyBehavior>
+              
+                <img className={styles.img} src="./assets/i/logo.png"></img>
               </Link>
             </div>
             <MobileProfile />
@@ -45,7 +45,7 @@ const Header = () => {
           <WalletButton></WalletButton>
           <ProfileMenu lvl="LVL 0" name="sticky berkin" />
 
-          <Link href="/login">
+          <Link legacyBehavior href="/login">
             <a style={{color:"inherit"}}>
             <LoginButton
               text="Login In"
@@ -54,7 +54,7 @@ const Header = () => {
             ></LoginButton></a>
           </Link>
 
-          <Link href="/register">
+          <Link legacyBehavior href="/register">
           <a style={{color:"inherit"}}>
             <LoginButton
               text="Sign Up"

@@ -7,7 +7,7 @@ import Input from "../../Components/Input";
 import styles from "../../styles/Home.module.css";
 const index = () => {
   return (
-    <div className={styles.container} style={{ height: "100%", width: "100%" }}>
+    <div className={styles.container} style={{ height: "100vh", width: "100%" }}>
     <Container>
       <Row>
         <Col sm={6} md={6} lg={6} xl={6} xxl={6}>
@@ -34,7 +34,8 @@ const index = () => {
             }}
           >
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
-            <Link href="/">
+            <Link legacyBehavior href="/main">
+              <a style={{color:"inherit"}}>
               <div
                 
                 style={{
@@ -48,7 +49,7 @@ const index = () => {
                 }}
               >
                 X
-              </div></Link>
+              </div></a></Link>
             </div>
             <div className={styles.textbig}>CONGRATS!</div>
             <div className={styles.yellowmin}>You started your journey to become a prestigious member of Sticky community.</div>

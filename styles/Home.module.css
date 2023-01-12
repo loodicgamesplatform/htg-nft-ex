@@ -593,6 +593,10 @@
   border-bottom: 1px solid #fffffc1a;
   box-shadow: 0px 4px 10px 0px #72726c;
 }
+.landlogo {
+	width: min(50vw, 500px);
+  
+}
 
 .img {
   width: 100%;
@@ -671,6 +675,9 @@
   .sub {
     width: 33%;
   }
+  .punkpose {
+    display: none;
+  }
 
     .mobileprofilediv{
       display: flex;
@@ -696,6 +703,7 @@
     line-height:18px;
     border-right: 1px solid #fffffc1a;
   }
+ 
 }
 
 .votesmenudiv {
